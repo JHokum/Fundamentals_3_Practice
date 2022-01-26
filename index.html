@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //function that returns the result of a number "a" plus 7
+        let add7 = a => a+7;
+
+        //function that returns the product of "a" and "b"
+        let multiply = (a,b) => a*b;
+
+        /*capitalizes the first letter by splitting into an array
+          then capitalizing the first position and joining into a 
+          new string.        
+        */
+        let capitalize = a => {
+            
+            let arr = a.split("");
+            arr[0] = arr[0].toUpperCase();
+            let str = arr.join("");
+            return str};
+        
+        /*returns the last letter of a string using split to make 
+          an array and returning the last position.
+          */
+        let lastLetter = apple => apple.split("").pop();
+
+        //alerts                        | expected
+        alert(add7(7));                //14
+        alert(multiply(5,5));         //25
+        alert(capitalize("hi"));     //Hi
+        alert(lastLetter("hello")); //o
+
+
+        
+        
+        
+        
+    </script>
+
+</body>
+</html>
